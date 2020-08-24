@@ -1,14 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import FHeader from './Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <FHeader />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is my React Native Web App
+          This is my React Native Web App :)
+          - Currently on Dev Branch
         </p>
         <a
           className="App-link"
@@ -18,7 +21,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }

@@ -1,0 +1,57 @@
+* {
+  text-align: left;
+}
+
+#headerContainer {
+  background-color: crimson;
+  min-height: 100px;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 5px solid blue;
+  padding: 0;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.Fiasco-Logo {
+  max-height: 70%;
+  pointer-events: none;
+  margin: auto;
+  padding: 15px;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+#navbarContainer {
+  text-align: center;
+  max-height: 100%;
+  list-style-type: none;
+  background-color: lawngreen;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.Nav-Div {
+  color: mintcream;
+  display: block;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2em;
+  border-bottom: 3px solid black;
+}
+
+.Nav-Div a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
