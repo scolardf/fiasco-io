@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 class ContentDisplay extends React.Component {
 
     constructor(props) {
@@ -14,15 +12,15 @@ class ContentDisplay extends React.Component {
                 { id:3, name: 'About', content: 'Filler - About' },
                 { id:4, name: 'Contact', content: 'Filler - Contact' },
             ],
-            pageToDisplay: Number(0),
         };
     }
 
     render() {
+        const content = this.props.contentToDisplay;
         return (
             <div className='Content-Div'>
-                <p>Text in ContentDisplay</p>
-                <p>{this.state.internalPages[this.state.pageToDisplay].content}</p>
+                <p>Text from App.js: {content}</p>
+                {/* <p>{this.state.internalPages[this.state.pageToDisplay].content}</p> */}
             </div>
         )
     };

@@ -2,10 +2,14 @@
   text-align: left;
 }
 
+button {
+  cursor: pointer;
+}
+
 #headerContainer {
   background-color: crimson;
-  min-height: 100px;
-  height: 10vh;
+  min-height: 75px;
+  max-height: 100px;
   width: 100%;
   border-bottom: 5px solid blue;
   padding: 0;
@@ -17,14 +21,37 @@
   justify-content: space-between;
 }
 
-.Fiasco-Logo {
-  max-height: 70%;
+#logoContainer {
+  max-height: 70rem;
+  padding: 0;
+  margin: 0;
+  display: block;
+  max-width: 100px;
+  height: auto;
+  clear: both;
+  position: relative;
+}
+
+#logoImage {
   pointer-events: none;
-  margin: auto;
-  padding: 15px;
+  margin: 5px;
+  padding: 0;
   display: block;
   width: auto;
-  height: auto;
+  height: 90%;
+  position: relative;
+}
+
+#logoButton {
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }
 
 #navbarContainer {
@@ -50,11 +77,11 @@
 }
 
 .Nav-Div button {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: white;
-    font-family: inherit;
-    background: none;
-    border: none;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  font-family: inherit;
+  background: none;
+  border: none;
 }

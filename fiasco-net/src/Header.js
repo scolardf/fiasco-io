@@ -9,23 +9,47 @@ class AppHeader extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    console.log("A link was clicked");
+  handleClick(key) {
+    console.log("A link was clicked: " + key);
+    this.props.onHeaderClick(key == "imageLink" ? "Home" : key);
   }
 
   render() {
     return (
       <div id="headerContainer">
-        <img src={fiascoLogo} className="Fiasco-Logo" alt="logo" />
+        {/* <a id="imageLink" href="#" onClick={e => this.handleClick(e.target.id)}><img src={fiascoLogo} className="Fiasco-Logo" alt="logo" /></a> */}
+        <div id="logoContainer">
+          <img src={fiascoLogo} id="logoImage" alt="logo" />
+          <button
+            id="logoButton"
+            value="Home"
+            onClick={(e) => this.handleClick(e.target.value)}
+          ></button>
+        </div>
         <ul id="navbarContainer">
           <li className="Nav-Div">
-            <button onClick={this.handleClick}>Projects</button>
+            <button
+              value="Projects"
+              onClick={(e) => this.handleClick(e.target.value)}
+            >
+              Projects
+            </button>
           </li>
           <li className="Nav-Div">
-            <button onClick={this.handleClick}>Me</button>
+            <button
+              value="About"
+              onClick={(e) => this.handleClick(e.target.value)}
+            >
+              Me
+            </button>
           </li>
           <li className="Nav-Div">
-            <button onClick={this.handleClick}>Contact</button>
+            <button
+              value="Contact"
+              onClick={(e) => this.handleClick(e.target.value)}
+            >
+              Contact
+            </button>
           </li>
         </ul>
       </div>
