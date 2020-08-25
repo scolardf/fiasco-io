@@ -49,9 +49,12 @@
   border-bottom: 3px solid black;
 }
 
-.Nav-Div a {
+.Nav-Div button {
     text-decoration: none;
     display: block;
     padding: 1em;
     color: white;
+    font-family: inherit;
+    background: none;
+    border: none;
 }
