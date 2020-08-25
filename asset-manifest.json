@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/fiasco-io/static/css/main.61944c20.chunk.css",
-    "main.js": "/fiasco-io/static/js/main.0e70a7ee.chunk.js",
-    "main.js.map": "/fiasco-io/static/js/main.0e70a7ee.chunk.js.map",
+    "main.css": "/fiasco-io/static/css/main.79761cc3.chunk.css",
+    "main.js": "/fiasco-io/static/js/main.d066bcdc.chunk.js",
+    "main.js.map": "/fiasco-io/static/js/main.d066bcdc.chunk.js.map",
     "runtime-main.js": "/fiasco-io/static/js/runtime-main.a0bd8ce2.js",
     "runtime-main.js.map": "/fiasco-io/static/js/runtime-main.a0bd8ce2.js.map",
-    "static/js/2.5ffe0b1b.chunk.js": "/fiasco-io/static/js/2.5ffe0b1b.chunk.js",
-    "static/js/2.5ffe0b1b.chunk.js.map": "/fiasco-io/static/js/2.5ffe0b1b.chunk.js.map",
+    "static/js/2.95395927.chunk.js": "/fiasco-io/static/js/2.95395927.chunk.js",
+    "static/js/2.95395927.chunk.js.map": "/fiasco-io/static/js/2.95395927.chunk.js.map",
     "index.html": "/fiasco-io/index.html",
-    "precache-manifest.8ff1aad10f7c97af2c5c595b1fd9260f.js": "/fiasco-io/precache-manifest.8ff1aad10f7c97af2c5c595b1fd9260f.js",
+    "precache-manifest.9f69a840dae4ec895114e57901b2d7ea.js": "/fiasco-io/precache-manifest.9f69a840dae4ec895114e57901b2d7ea.js",
     "service-worker.js": "/fiasco-io/service-worker.js",
-    "static/css/main.61944c20.chunk.css.map": "/fiasco-io/static/css/main.61944c20.chunk.css.map",
-    "static/js/2.5ffe0b1b.chunk.js.LICENSE.txt": "/fiasco-io/static/js/2.5ffe0b1b.chunk.js.LICENSE.txt"
+    "static/css/main.79761cc3.chunk.css.map": "/fiasco-io/static/css/main.79761cc3.chunk.css.map",
+    "static/js/2.95395927.chunk.js.LICENSE.txt": "/fiasco-io/static/js/2.95395927.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a0bd8ce2.js",
-    "static/js/2.5ffe0b1b.chunk.js",
-    "static/css/main.61944c20.chunk.css",
-    "static/js/main.0e70a7ee.chunk.js"
+    "static/js/2.95395927.chunk.js",
+    "static/css/main.79761cc3.chunk.css",
+    "static/js/main.d066bcdc.chunk.js"
   ]
 }
