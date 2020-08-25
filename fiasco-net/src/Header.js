@@ -11,7 +11,7 @@ class AppHeader extends React.Component {
 
   handleClick(key) {
     console.log("A link was clicked: " + key);
-    this.props.onHeaderClick(key == "imageLink" ? "Home" : key);
+    this.props.onHeaderClick(key);
   }
 
   render() {
