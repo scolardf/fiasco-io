@@ -38,7 +38,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div id="projectListContainer">
-        <div id="projectSidebar"><p>{"Projects Class" + '\n' + "Sidebar Space"}</p></div>
+        <div id="projectSidebar"><p>{"Projects Class \n Sidebar Space"}</p></div>
         {this.state.projectListItems}
       </div>
     );
