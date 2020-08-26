@@ -12,7 +12,6 @@ class App extends React.Component {
     this.state = {
       contentToDisplay: "Home",
     };
-
   }
 
   handleChangePage(pagename) {

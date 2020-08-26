@@ -12,6 +12,11 @@ class Projects extends React.Component {
       projectList: [
         { key: 1, content: "Test project content" },
         { key: 2, content: "More test content" },
+        { key: 3, content: "3" },
+        { key: 4, content: "4" },
+        { key: 5, content: "5" },
+        { key: 6, content: "6" },
+        { key: 7, content: "7" },
       ],
       projectListItems: "",
     };
@@ -23,27 +28,21 @@ class Projects extends React.Component {
   }
 
   updateProjectList() {
-    console.log("updateProjectList has been called");
-    console.log("Attempt to create project item list");
     var projectList = this.state.projectList;
     var projectListItems = projectList.map((content) => (
-      <li key={content.key}>{content.content}</li>
+      <li className="Project-List-Item" key={content.key}>{content.content}</li>
     ));
-    console.log("Item list created, attempt to setState of projectListItems");
-
-    this.setState({ projectListItems: <ul>{projectListItems}</ul> });
-    console.log("projectListItems set");
+    this.setState({ projectListItems: <ul id="projectList">{projectListItems}</ul> });
   }
 
   render() {
     return (
-      <div>
-        <p>Projects Class</p>
-        {console.log("Attempt to render project list items")}
-        <ul>{this.state.projectListItems}</ul>
-        {console.log("Rendered project list items")}
+      <div id="projectListContainer">
+        <div id="projectSidebar"><p>{"Projects Class" + '\n' + "Sidebar Space"}</p></div>
+        {this.state.projectListItems}
       </div>
     );
+  }
 }
 
 export default Projects;

@@ -1,0 +1,33 @@
+#projectListContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#projectSidebar {
+    width: 100px;
+}
+
+#projectList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between flex-start ;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Temporary Project-List-Item for testing - final will be in ProjectListItem.css */
+.Project-List-Item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin: 0.5%;
+  line-height: 150px;
+  color: white;
+  font-weight: lighter;
+  font-size: 2em;
+  text-align: center;
+}
