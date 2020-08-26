@@ -1,7 +1,7 @@
 import React from "react";
 
-import Home from "./Home";
-import Projects from "./Projects";
+import Home from "./DisplayComponents/Home";
+import Projects from "./DisplayComponents/Projects";
 
 class ContentDisplay extends React.Component {
   constructor(props) {
