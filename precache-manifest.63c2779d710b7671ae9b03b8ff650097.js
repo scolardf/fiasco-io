@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc65e94557971700849bce370993ef2e",
+    "revision": "5493e0ccca7f67b5746e427283169610",
     "url": "/fiasco-io/index.html"
   },
   {
-    "revision": "59b8e208274089bfaab9",
-    "url": "/fiasco-io/static/css/main.79761cc3.chunk.css"
+    "revision": "51cb10aeebec4ed934b4",
+    "url": "/fiasco-io/static/css/main.6dad4071.chunk.css"
   },
   {
     "revision": "ff9b98588046205f9040",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fiasco-io/static/js/2.95395927.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "59b8e208274089bfaab9",
-    "url": "/fiasco-io/static/js/main.d066bcdc.chunk.js"
+    "revision": "51cb10aeebec4ed934b4",
+    "url": "/fiasco-io/static/js/main.7895ff4f.chunk.js"
   },
   {
     "revision": "33f383ab01b05fa9c534",
