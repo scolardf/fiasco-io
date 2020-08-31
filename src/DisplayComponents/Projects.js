@@ -2,15 +2,17 @@ import React from "react";
 
 import "./Projects.css";
 import "./ProjectItem";
+import ProjectItem from "./ProjectItem";
+import fiascoSample from "../Images/Fiasco-Io-Example.png";
 
 class Projects extends React.Component {
   constructor(props) {
     super(props);
 
     this.updateTestProjectList = this.updateTestProjectList.bind(this);
-
+    this.updateProjectList = this.updateProjectList.bind(this);
     this.state = {
-      projectList: [{ key: 1 }], //Initialise sample projectList for use later, may not be used
+      projectList: [], //Initialise sample projectList for use later, may not be used
       projectListItems: "",
 
       testProjectList: [
@@ -28,17 +30,42 @@ class Projects extends React.Component {
 
   componentDidMount() {
     console.log("Projects Component mounted, calling updateTestProjectList");
+
     this.updateTestProjectList();
+    this.updateProjectList();
   }
 
   updateProjectList() {
     //For now, will use sample projectList. In final, will request up to date list from db here
-    var projectList = this.state.projectList;
-    var projectListItems = projectList.map((content) => (
-      <li className="Project-List-Item" key={content.key}>
-        {content.content}
-      </li>
-    ));
+    console.log("UpdateProjectList called");
+    var sampleItem = {
+      key: "initial",
+      data: {
+        date: "2020-08-31",
+        title: "Fiasco-io",
+        image: fiascoSample,
+        description:
+          "A portfolio site written In Javascript using React Native",
+        repository: "https://github.com/scolardf/fiasco-io",
+        // additionals: [
+        //   {siteURL: "https://scolardf.github.io/fiasco-io/"},
+        //   {tags: ["Javascript", "React"]},
+        // ]
+      },
+    };
+    console.log(sampleItem);
+    this.setState({
+      projectList: [sampleItem],
+    });
+    console.log("projectList state set. attempting build of ProjectItem array");
+    // var projectList = this.state.projectList;
+    
+    // var projectListItems = projectList.map((content) => (
+    //   <li className="Project-List-Item" key={content.key}>
+    //     <ProjectItem data={content.data}/>
+    //   </li>
+    // ));
+    var projectListItems = <li className="Project-List-Item"><ProjectItem {...sampleItem}/></li>
     this.setState({
       projectListItems: <ul id="projectList">{projectListItems}</ul>,
     });
@@ -64,6 +91,7 @@ class Projects extends React.Component {
           <p>{"Projects Class \n Sidebar Space"}</p>
         </div>
         {this.state.testProjectListItems}
+        {this.state.projectListItems}
       </div>
     );
   }

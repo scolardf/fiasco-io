@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  flex-flow: row wrap;
 }
 
 #projectSidebar {
@@ -50,6 +51,6 @@
   line-height: 150px;
   color: white;
   font-weight: lighter;
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
 }
