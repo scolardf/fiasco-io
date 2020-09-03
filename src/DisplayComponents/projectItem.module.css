@@ -1,0 +1,55 @@
+
+.projectItemContainer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 35% 40% 10%;
+  grid-template-areas:
+    "dateBox projImage"
+    "titleBox projImage"
+    "main main"
+    "footer footer";
+}
+
+.dateBox {
+  grid-area: dateBox;
+  align-items: center;
+  display: flex;
+}
+.dateP {
+    background-color: antiquewhite;   
+}
+
+
+.titleBox {
+  grid-area: titleBox;
+  align-items: center;
+  display: flex;
+}
+.titleP {
+    background-color: rebeccapurple;
+}
+
+.imageContainer {
+  /* margin: 5px 10%; */
+  grid-area: projImage;
+  padding: 5px;
+}
+.imageInner {
+    width: 100%;
+    /* border: 1px black solid; */
+    object-fit: contain;
+  }
+
+.descriptionP {
+    grid-area: main;
+}
+
+.additionalsDiv {
+    grid-area: footer;
+}

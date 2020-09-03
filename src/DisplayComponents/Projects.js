@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./Projects.css";
-import "./ProjectItem";
 import ProjectItem from "./ProjectItem";
 import fiascoSample from "../Images/Fiasco-Io-Example.png";
 
@@ -90,7 +89,7 @@ class Projects extends React.Component {
         <div id="projectSidebar">
           <p>{"Projects Class \n Sidebar Space"}</p>
         </div>
-        {this.state.testProjectListItems}
+        {/* {this.state.testProjectListItems} */}
         {this.state.projectListItems}
       </div>
     );

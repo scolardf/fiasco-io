@@ -1,19 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 #projectListContainer {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: row wrap;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: auto;
 }
 
 #projectSidebar {
-    width: 100px;
+    grid-column: 1;
+    padding: 10px;
 }
 
 #projectList {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between flex-start ;
+  grid-column: 2;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -44,13 +48,12 @@
 
 .Project-List-Item {
   background: cyan;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin: 0.5%;
-  line-height: 150px;
-  color: white;
+  max-width: 50%;
+  padding-top: 33.33%;
+  height: 0;
+  overflow: visible;
+  position: relative;
+  /* line-height: 150px; */
+  color: black;
   font-weight: lighter;
-  font-size: 1em;
-  text-align: center;
 }
