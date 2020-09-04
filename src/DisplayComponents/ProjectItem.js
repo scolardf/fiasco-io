@@ -16,7 +16,7 @@ class ProjectItem extends React.Component {
           <p className={styles.dateP}>{projectData.date}</p>
         </div>
         <div className={styles.titleBox}>
-          <p className={styles.titleP}>{projectData.title}</p>
+          <h1 className={styles.titleH1}>{projectData.title}</h1>
         </div>
         <div className={styles.imageContainer}>
           <img

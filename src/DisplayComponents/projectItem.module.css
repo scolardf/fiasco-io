@@ -1,11 +1,10 @@
-
 .projectItemContainer {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-
+  font-size: clamp(16px, 1vw, 22px);
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 15% 35% 40% 10%;
@@ -15,6 +14,10 @@
     "main main"
     "footer footer";
 }
+.projectItemContainer * {
+  padding: 0;
+  margin: 0;
+}
 
 .dateBox {
   grid-area: dateBox;
@@ -22,17 +25,17 @@
   display: flex;
 }
 .dateP {
-    background-color: antiquewhite;   
+  margin-left: 10px;
 }
-
 
 .titleBox {
   grid-area: titleBox;
   align-items: center;
   display: flex;
 }
-.titleP {
-    background-color: rebeccapurple;
+.titleH1 {
+  margin-left: 10px;
+  font-weight: bolder;
 }
 
 .imageContainer {
@@ -41,15 +44,17 @@
   padding: 5px;
 }
 .imageInner {
-    width: 100%;
-    /* border: 1px black solid; */
-    object-fit: contain;
-  }
+  width: 100%;
+  /* border: 1px black solid; */
+  object-fit: contain;
+}
 
 .descriptionP {
-    grid-area: main;
+  grid-area: main;
+  margin-left: 10px;
 }
 
 .additionalsDiv {
-    grid-area: footer;
+  grid-area: footer;
+  margin-left: 10px;
 }
