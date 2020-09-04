@@ -1,6 +1,8 @@
 import React from "react";
 import fiascoLogo from "./Images/Fiasco-Logo.png";
 import "./Header.css";
+import "./HeaderButton";
+import HeaderButton from "./HeaderButton";
 
 class AppHeader extends React.Component {
   constructor(props) {
@@ -27,30 +29,21 @@ class AppHeader extends React.Component {
           ></button>
         </div>
         <ul id="navbarContainer">
-          <li className="Nav-Div">
-            <button
-              value="Projects"
-              onClick={(e) => this.handleClick(e.target.value)}
-            >
-              Projects
-            </button>
-          </li>
-          <li className="Nav-Div">
-            <button
-              value="About"
-              onClick={(e) => this.handleClick(e.target.value)}
-            >
-              Me
-            </button>
-          </li>
-          <li className="Nav-Div">
-            <button
-              value="Contact"
-              onClick={(e) => this.handleClick(e.target.value)}
-            >
-              Contact
-            </button>
-          </li>
+          <HeaderButton
+            name="Projects"
+            value="Projects"
+            clickHandle={this.handleClick}
+          ></HeaderButton>
+          <HeaderButton
+            name="Me"
+            value="About"
+            clickHandle={this.handleClick}
+          ></HeaderButton>
+          <HeaderButton
+            name="Contact"
+            value="Contact"
+            clickHandle={this.handleClick}
+          ></HeaderButton>
         </ul>
       </div>
     );

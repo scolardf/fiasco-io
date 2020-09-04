@@ -1,13 +1,8 @@
 import React from "react";
 import styles from "./projectItem.module.css";
+import githubLogo from "../Images/GitHub_Logo_White.png";
 
 class ProjectItem extends React.Component {
-  constructor(props) {
-    super(props);
-
-    console.log("Constructor: " + this.props);
-  }
-
   render() {
     const projectData = this.props.data;
     return (
@@ -27,9 +22,9 @@ class ProjectItem extends React.Component {
         </div>
         <p className={styles.descriptionP}>{projectData.description}</p>
         <div className={styles.additionalsDiv}>
-          <p className={styles.repoP}>
-            Repo: <a href={projectData.repository}>{projectData.repository}</a>
-          </p>
+          <a className={styles.repoLink} href={projectData.repository}>
+            <img src={githubLogo} alt="Repo" />
+          </a>
           {projectData.additionals && <p>this is an additional p block</p>}
         </div>
       </div>

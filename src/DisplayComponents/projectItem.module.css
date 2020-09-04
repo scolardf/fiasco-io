@@ -2,6 +2,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  /* border-left: aliceblue 2px solid; */
   top: 0;
   left: 0;
   font-size: clamp(14px, 1vw, 22px);
@@ -18,15 +19,17 @@
   padding: 0;
   margin: 0;
 }
-
+.projectItemContainer p {
+  border-left: aliceblue 2px solid;
+  margin-left: 5px;
+  padding-left: 5px;
+}
 .dateBox {
   grid-area: dateBox;
   align-items: center;
   display: flex;
 }
-.dateP {
-  margin-left: 10px;
-}
+
 
 .titleBox {
   grid-area: titleBox;
@@ -34,27 +37,40 @@
   display: flex;
 }
 .titleH1 {
-  margin-left: 10px;
-  font-weight: bolder;
+  font-weight: lighter;
+  border-left: aliceblue 2px solid;
+  margin-left: 5px;
+  padding-left: 5px;
 }
 
 .imageContainer {
-  /* margin: 5px 10%; */
   grid-area: projImage;
   padding: 5px;
 }
 .imageInner {
-  width: 100%;
+  display: block;
+  margin: auto;
+  height: 100%;
   /* border: 1px black solid; */
   object-fit: contain;
 }
 
 .descriptionP {
   grid-area: main;
-  margin-left: 10px;
+  margin: 10px 0;
 }
 
 .additionalsDiv {
   grid-area: footer;
   margin-left: 10px;
+  display: flex;
+  flex-flow: column;
+}
+
+.repoLink {
+  height: 100%;
+  display: inline-block;
+}
+.repoLink * {
+  height: inherit;
 }

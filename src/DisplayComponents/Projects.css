@@ -50,7 +50,7 @@
 }
 
 .Project-List-Item {
-  background: cyan;
+  background: #37474f;
   max-width: 50%;
   min-width: 300px;
   min-height: 210px;
@@ -59,7 +59,4 @@
   overflow: visible;
   position: relative;
   flex-grow: 1;
-  /* line-height: 150px; */
-  color: black;
-  font-weight: lighter;
 }

@@ -1,9 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import "./HeaderButton.css"
+import "./HeaderButton.css";
 
-class HeaderButton extends React.Component{
-    constructor(props) {
-        super(props);
-    }
+function HeaderButton(props) {
+  return (
+    <li className="headerButtonLi">
+      <button
+        value={props.value}
+        onClick={() => props.clickHandle(props.value)}
+      >
+        {props.name}
+      </button>
+    </li>
+  );
 }
+
+export default HeaderButton;

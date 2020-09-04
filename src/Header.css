@@ -66,7 +66,7 @@ button {
   flex-grow: 1;
 }
 
-.Nav-Div {
+.headerButtonLi {
   color: mintcream;
   display: block;
   padding: 0;
@@ -76,7 +76,7 @@ button {
   border-bottom: 3px solid black;
 }
 
-.Nav-Div button {
+.headerButtonLi button {
   text-decoration: none;
   display: block;
   padding: 1em;

@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Projects.css";
 import ProjectItem from "./ProjectItem";
-import fiascoSample from "../Images/Fiasco-Io-Example.png";
+import fiascoLogo from "../Images/Fiasco-Logo.png";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -29,9 +29,9 @@ class Projects extends React.Component {
       data: {
         date: "2020-08-31",
         title: "Fiasco-io",
-        image: fiascoSample,
+        image: fiascoLogo,
         description:
-          `A portfolio site written using React Native. 
+          `A portfolio site written using ReactJS. 
           You're looking at it right now! 
           Isn't it pretty?`,
         repository: "https://github.com/scolardf/fiasco-io",
