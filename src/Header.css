@@ -7,15 +7,14 @@ button {
 }
 
 #headerContainer {
-  background-color: crimson;
   min-height: 75px;
   max-height: 100px;
   width: 100%;
-  border-bottom: 5px solid blue;
+  border-bottom: 5px solid aliceblue;
   padding: 0;
-  margin: auto;
-
-  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -58,7 +57,6 @@ button {
   text-align: center;
   max-height: 100%;
   list-style-type: none;
-  background-color: lawngreen;
   display: inline-flex;
   justify-content: flex-end;
   margin: 0;
@@ -68,19 +66,45 @@ button {
 
 .headerButtonLi {
   color: mintcream;
-  display: block;
+  /* display: block; */
   padding: 0;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 2em;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid aliceblue;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.headerButtonLi:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 0;
+  background: aliceblue;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.headerButtonLi:hover:before, .headerButtonLi:focus:before, .headerButtonLi:active:before {
+  right: 0;
 }
 
 .headerButtonLi button {
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
+  color: aliceblue;
   font-family: inherit;
   background: none;
   border: none;
