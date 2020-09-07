@@ -33,7 +33,7 @@ class ProjectItem extends React.Component {
           ></img>
         </div>
         <p className={styles.descriptionP}>{projectData.description}</p>
-        <div className={styles.additionalsDiv}>
+        <div className={styles.repoDiv}>
           <a className={styles.repoLink} href={projectData.repository}>
             <img src={githubLogo} alt="Repo" />
           </a>

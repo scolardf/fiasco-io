@@ -52,7 +52,6 @@
   display: block;
   margin: auto;
   height: 100%;
-  /* border: 1px black solid; */
   object-fit: contain;
 }
 
@@ -61,22 +60,18 @@
   margin: 10px 0;
 }
 
-.additionalsDiv {
+.repoDiv {
   grid-area: footer;
   margin-left: 10px;
   display: flex;
-  flex-flow: column;
 }
 
 .repoLink {
   height: 100%;
-  max-width: 90px;
-  display: inline-block;
-  overflow: hidden;
+  justify-content: flex-start;
 }
 .repoLink * {
   height: inherit;
-  float: left;
 }
 
 

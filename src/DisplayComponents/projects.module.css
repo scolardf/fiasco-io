@@ -1,0 +1,35 @@
+.projectListContainer {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: auto;
+}
+
+.projectSidebar {
+  grid-column: 1;
+  padding: 0 10px;
+}
+
+.projectList {
+  grid-column: 2;
+  padding: 0 35px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.projectListItem {
+  background: #37474f;
+  max-width: 50%;
+  min-width: 300px;
+  min-height: 210px;
+  padding-top: 33.33%;
+  height: 0;
+  overflow: visible;
+  position: relative;
+  flex-grow: 1;
+}

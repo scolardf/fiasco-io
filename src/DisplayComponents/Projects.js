@@ -1,6 +1,6 @@
 import React from "react";
+import styles from "./projects.module.css";
 
-import "./Projects.css";
 import ProjectItem from "./ProjectItem";
 import fiascoLogo from "../Images/Fiasco-Logo.png";
 
@@ -23,7 +23,6 @@ class Projects extends React.Component {
 
   updateProjectList() {
     //For now, will use sample projectList. In final, will request up to date list from db here
-    console.log("UpdateProjectList called");
     var sampleItem = {
       key: "initial",
       data: {
@@ -38,11 +37,9 @@ class Projects extends React.Component {
         tags: ["Javascript", "React"]
       },
     };
-    console.log(sampleItem);
     this.setState({
       projectList: [sampleItem],
     });
-    console.log("projectList state set. attempting build of ProjectItem array");
     // var projectList = this.state.projectList;
 
     // var projectListItems = projectList.map((content) => (
@@ -51,20 +48,23 @@ class Projects extends React.Component {
     //   </li>
     // ));
     var projectListItems = (
-      <li className="Project-List-Item">
+      <li className={styles.projectListItem}>
         <ProjectItem {...sampleItem} />
       </li>
     );
     this.setState({
-      projectListItems: <ul id="projectList">{projectListItems}</ul>,
+      projectListItems: <ul className={styles.projectList}>{projectListItems}</ul>,
     });
   }
 
   render() {
     return (
-      <div id="projectListContainer">
-        <div id="projectSidebar">
-          <p>{"Projects Class \n Sidebar Space"}</p>
+      <div className={styles.projectListContainer}>
+        <div className={styles.projectSidebar}>
+          <p>
+            This section is unfinished.
+            Filters for the projects will be listed here.
+          </p>
         </div>
         {this.state.projectListItems}
       </div>
