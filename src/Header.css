@@ -63,7 +63,7 @@ button {
 }
 
 .headerButtonLi {
-  color: mintcream;
+  color: aliceblue;
   /* display: block; */
   padding: 0;
   margin-top: auto;
@@ -94,7 +94,9 @@ button {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.headerButtonLi:hover:before, .headerButtonLi:focus:before, .headerButtonLi:active:before {
+.headerButtonLi:hover:before,
+.headerButtonLi:focus:before,
+.headerButtonLi:active:before {
   right: 0;
 }
 

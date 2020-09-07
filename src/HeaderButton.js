@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./HeaderButton.css";
-
 function HeaderButton(props) {
   return (
     <li className="headerButtonLi">

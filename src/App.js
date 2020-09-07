@@ -18,13 +18,14 @@ class App extends React.Component {
     this.setState({ contentToDisplay: pagename });
   }
 
+
   render() {
     const contentToDisplay = this.state.contentToDisplay;
 
     return (
       <div className="App">
-        <FHeader onHeaderClick={this.handleChangePage} />
-        <FContent contentToDisplay={contentToDisplay} />
+        <FHeader navHandler={this.handleChangePage} />
+        <FContent contentToDisplay={contentToDisplay} navHandler={this.handleChangePage}/>
       </div>
     );
   }

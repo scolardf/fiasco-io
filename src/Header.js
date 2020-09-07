@@ -13,7 +13,7 @@ class AppHeader extends React.Component {
 
   handleClick(key) {
     console.log("A link was clicked: " + key);
-    this.props.onHeaderClick(key);
+    this.props.navHandler(key);
   }
 
   render() {
