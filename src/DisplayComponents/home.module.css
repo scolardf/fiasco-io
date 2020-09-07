@@ -10,13 +10,16 @@
   display: inline-block;
   margin: 10px auto;
   font-size: clamp(14px, 2vw, 40px);
+  font-weight: normal;
 }
 
 .nameH1 {
-  font-weight: lighter;
+
 }
 
-.titleP {
+.highlight {
+    color: #aacae6;
+
 }
 
 .navContainer {
@@ -28,7 +31,7 @@
 .navButton {
   text-decoration: none;
   padding: 1em;
-  color: aliceblue;
+  color: #f0f8ff;
   font-family: inherit;
   background: none;
   border: none;

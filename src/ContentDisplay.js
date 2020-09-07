@@ -2,6 +2,7 @@ import React from "react";
 
 import Home from "./DisplayComponents/Home";
 import Projects from "./DisplayComponents/Projects";
+import About from "./DisplayComponents/About";
 
 class ContentDisplay extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class ContentDisplay extends React.Component {
       internalPages: [
         { id: "Home", content: <Home navHandler={props.navHandler}/> },
         { id: "Projects", content: <Projects /> },
-        { id: "About", content: <p>About Text</p> },
+        { id: "About", content: <About /> },
         { id: "Contact", content: <p>Contact Text</p> },
       ]
     };

@@ -15,8 +15,8 @@ class Home extends React.Component {
     render() {
         return (
             <div className={styles.homeContainer}>
-                <h1 className={styles.nameH1}>my name is Fiach Scolard</h1>
-                <p className={styles.titleP}>i'm a new developer</p>
+                <h1 className={styles.nameH1}>my name is <span className={styles.highlight} >Fiach Scolard</span></h1>
+                <p>i'm a new developer</p>
                 <div className={styles.navContainer}>
                     <button className={styles.navButton} onClick={() => this.pageNav("Projects")}>see my work</button>
                     <button className={styles.navButton} onClick={() => this.pageNav("About")}>who am i</button>
