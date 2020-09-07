@@ -3,6 +3,18 @@ import styles from "./projectItem.module.css";
 import githubLogo from "../Images/GitHub_Logo_White.png";
 
 class ProjectItem extends React.Component {
+  tagList(tagList) {
+    return (
+      <ul className={styles.tagList}>
+        {tagList.map((tag) => (
+          <li key={tag} className={styles.tagListItem}>
+            <p>{tag.toString()}</p>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   render() {
     const projectData = this.props.data;
     return (
@@ -25,8 +37,8 @@ class ProjectItem extends React.Component {
           <a className={styles.repoLink} href={projectData.repository}>
             <img src={githubLogo} alt="Repo" />
           </a>
-          {projectData.additionals && <p>this is an additional p block</p>}
         </div>
+        {this.tagList(projectData.tags)}
       </div>
     );
   }

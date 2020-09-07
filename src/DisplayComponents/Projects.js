@@ -35,10 +35,7 @@ class Projects extends React.Component {
           You're looking at it right now! 
           Isn't it pretty?`,
         repository: "https://github.com/scolardf/fiasco-io",
-        // additionals: [
-        //   {siteURL: "https://scolardf.github.io/fiasco-io/"},
-        //   {tags: ["Javascript", "React"]},
-        // ]
+        tags: ["Javascript", "React"]
       },
     };
     console.log(sampleItem);
