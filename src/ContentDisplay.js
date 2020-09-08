@@ -3,6 +3,7 @@ import React from "react";
 import Home from "./DisplayComponents/Home";
 import Projects from "./DisplayComponents/Projects";
 import About from "./DisplayComponents/About";
+import Contact from "./DisplayComponents/Contact";
 
 class ContentDisplay extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class ContentDisplay extends React.Component {
         { id: "Home", content: <Home navHandler={props.navHandler}/> },
         { id: "Projects", content: <Projects /> },
         { id: "About", content: <About /> },
-        { id: "Contact", content: <p>Contact Text</p> },
+        { id: "Contact", content: <Contact /> },
       ]
     };
   }
@@ -23,7 +24,7 @@ class ContentDisplay extends React.Component {
     const contentList = this.state.internalPages;
     const displayPage = contentList.find((item) => item.id === contentKey);
     return (
-      <div className="Content-Div">
+      <div className="contentDiv">
         {/* <p>Text from App.js: {contentKey}</p> */}
         {displayPage.content}
       </div>

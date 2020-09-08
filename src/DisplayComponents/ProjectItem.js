@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./projectItem.module.css";
-import githubLogo from "../Images/GitHub_Logo_White.png";
+import styles from "./stylesheets/projectItem.module.css";
+import githubLogoV from "../resource/GitHub_Vector.svg";
 
 class ProjectItem extends React.Component {
   tagList(tagList) {
@@ -35,7 +35,7 @@ class ProjectItem extends React.Component {
         <p className={styles.descriptionP}>{projectData.description}</p>
         <div className={styles.repoDiv}>
           <a className={styles.repoLink} href={projectData.repository}>
-            <img src={githubLogo} alt="Repo" />
+            <img src={githubLogoV} alt="Repo" />
           </a>
         </div>
         {this.tagList(projectData.tags)}

@@ -1,7 +1,7 @@
 .projectListContainer {
   height: 100%;
   width: 100%;
-  padding: 10px;
+  padding: 25px 10px;
   display: grid;
   grid-template-columns: 15% 85%;
   grid-template-rows: auto;
@@ -9,13 +9,15 @@
 
 .projectSidebar {
   grid-column: 1;
+  
   padding: 0 10px;
+  border-right: aliceblue 5px solid;
 }
 
 .projectList {
+  margin: 0;
   grid-column: 2;
   padding: 0 35px;
-  margin: 0;
   list-style: none;
   display: flex;
   flex-flow: row wrap;

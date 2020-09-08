@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./home.module.css";
+import styles from "./stylesheets/home.module.css";
 
 class Home extends React.Component {
     constructor(props) {

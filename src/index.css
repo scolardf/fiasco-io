@@ -17,6 +17,7 @@ html {
   box-sizing: border-box;
   background-color: #102027;
   color: aliceblue;
+  overflow: hidden;
 }
 *, *:before, *:after {
   box-sizing: inherit;

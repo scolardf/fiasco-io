@@ -5,6 +5,7 @@
   /* border-left: aliceblue 2px solid; */
   top: 0;
   left: 0;
+  padding: 5px;
   font-size: clamp(14px, 1vw, 22px);
   display: grid;
   grid-template-columns: 50% 50%;
@@ -21,7 +22,7 @@
   margin: 0;
 }
 .projectItemContainer p {
-  border-left: aliceblue 2px solid;
+  border-left: aliceblue 3px solid;
   margin-left: 5px;
   padding-left: 5px;
 }
@@ -39,7 +40,7 @@
 }
 .titleH1 {
   font-weight: lighter;
-  border-left: aliceblue 2px solid;
+  border-left: aliceblue 3px solid;
   margin-left: 5px;
   padding-left: 5px;
 }
@@ -68,7 +69,8 @@
 
 .repoLink {
   height: 100%;
-  justify-content: flex-start;
+  padding: 2px;
+  /* justify-content: flex-start; */
 }
 .repoLink * {
   height: inherit;

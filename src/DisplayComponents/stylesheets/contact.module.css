@@ -1,0 +1,27 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.socialContainer {
+    height: 75vh;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttonContainer{
+    min-width: 100px;
+    min-height: 100px;
+    display: block;
+    /* background-color: aliceblue; */
+}
+.buttonLink {
+    /* height: 100%; */
+    display: block;
+    padding: 10px;
+}
+.buttonSVG {
+    /* height: 25%; */
+    display: block;
+    fill: aliceblue;
+}

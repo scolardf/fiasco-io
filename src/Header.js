@@ -1,5 +1,5 @@
 import React from "react";
-import fiascoLogo from "./Images/Fiasco-Logo.png";
+import fiascoLogo from "./resource/Fiasco-Logo.png";
 import "./Header.css";
 import "./HeaderButton";
 import HeaderButton from "./HeaderButton";

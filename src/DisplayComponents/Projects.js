@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./projects.module.css";
+import styles from "./stylesheets/projects.module.css";
 
 import ProjectItem from "./ProjectItem";
-import fiascoLogo from "../Images/Fiasco-Logo.png";
+import fiascoLogo from "../resource/Fiasco-Logo.png";
 
 class Projects extends React.Component {
   constructor(props) {
