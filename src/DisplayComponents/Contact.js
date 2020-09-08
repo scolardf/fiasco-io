@@ -2,12 +2,19 @@ import React from "react";
 import styles from "./stylesheets/contact.module.css";
 import githubIcon from "../resource/icons/github.svg";
 import linkedinIcon from "../resource/icons/linkedin.svg";
+import gmailIcon from "../resource/icons/gmail.svg";
+import instaIcon from "../resource/icons/instagram.svg";
 
 class Contact extends React.Component {
   contactButton(link, icon, bgColour) {
     return (
       <div className={styles.buttonContainer}>
-        <a target="_blank" rel="noopener noreferrer" href={link} className={styles.buttonLink} style={{ backgroundColor: bgColour }}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={link}
+          className={styles.buttonLink}
+        >
           <img className={styles.buttonImg} src={icon} alt={link}></img>
         </a>
       </div>
@@ -17,10 +24,9 @@ class Contact extends React.Component {
   render() {
     return (
       <div className={styles.socialContainer}>
-        {/* <SocialIcon url="https://github.com/scolardf/" style={{ height: 200, width: 200 }}/>
-                <SocialIcon url="https://www.linkedin.com/in/fiach-scolard-98350213a/"/> */}
+        <h1>reach out to me</h1>
         {this.contactButton(
-          "https://github.com/scolardf/",
+          "htth1s://github.com/scolardf/",
           githubIcon,
           "white"
         )}
@@ -28,6 +34,16 @@ class Contact extends React.Component {
           "https://www.linkedin.com/in/fiach-scolard-98350213a/",
           linkedinIcon,
           "#0077B5"
+        )}
+        {this.contactButton(
+          "mailto:scolardf@tcd.ie",
+          gmailIcon,
+          "#D14836"
+        )}
+        {this.contactButton(
+          "https://www.instagram.com/fethingfish/",
+          instaIcon,
+          "#E4405F"
         )}
       </div>
     );

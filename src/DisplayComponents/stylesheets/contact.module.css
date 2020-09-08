@@ -1,27 +1,64 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 .socialContainer {
-    height: 75vh;
+  height: 100%;
+  padding: 25% 10%;
+  display: flex;
+  flex: column wrap;
+  justify-content: space-around;
+}
+.socialContainer h1{
+    padding: 0;
     margin: auto;
-    padding: auto;
-    display: flex;
-    flex: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
 }
-.buttonContainer{
-    min-width: 100px;
-    min-height: 100px;
-    display: block;
-    /* background-color: aliceblue; */
+.buttonContainer {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: aliceblue;
 }
+
 .buttonLink {
-    /* height: 100%; */
-    display: block;
-    padding: 10px;
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  padding: 25%;
+  transition: background .3s ;
+  transition-timing-function: ease-in;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
 }
-.buttonSVG {
-    /* height: 25%; */
-    display: block;
-    fill: aliceblue;
+.buttonLink:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* background:  #102027; */
+    border-color: #102027;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition-property: border-width;
+    transition-property: border-width;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .buttonLink:hover:before,
+  .buttonLink:focus:before,
+  .buttonLink:active:before {
+    -webkit-transform: translateY(0);
+  transform: translateY(0);
+  border-width: 3px;
+  }
+
+.buttonLink:hover {
+    background-color: #aacae6;
+    /* padding: 5%; */
 }
