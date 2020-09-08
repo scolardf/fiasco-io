@@ -3,10 +3,9 @@
   width: 100%;
   color: #102027;
   position: absolute;
-  /* border-left: #102027 2px solid; */
   top: 0;
   left: 0;
-  padding: 5px;
+  /* padding: 5px; */
   font-size: clamp(14px, 1vw, 22px);
   display: grid;
   grid-template-columns: 50% 50%;
@@ -60,6 +59,7 @@
 .descriptionP {
   grid-area: main;
   margin: 10px 0;
+  /* height: 100%; */
 }
 
 .repoDiv {

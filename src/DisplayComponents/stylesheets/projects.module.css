@@ -15,21 +15,24 @@
 
 .projectList {
   margin: 0;
+  /* height: 100%; */
   grid-column: 2;
   padding: 0 35px;
   list-style: none;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow-y: scroll;
 }
 
 .projectListItem {
   background: aliceblue;
-  max-width: 50%;
+  width: 30%;
   min-width: 300px;
   min-height: 210px;
-  padding-top: 33.33%;
-  height: 0;
+  margin: 15px;
+  padding-top: 25%;
   overflow: visible;
   position: relative;
   flex-grow: 1;

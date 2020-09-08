@@ -24,7 +24,7 @@ class ContentDisplay extends React.Component {
     const contentList = this.state.internalPages;
     const displayPage = contentList.find((item) => item.id === contentKey);
     return (
-      <div className="contentDiv">
+      <div className="contentContainer">
         {/* <p>Text from App.js: {contentKey}</p> */}
         {displayPage.content}
       </div>

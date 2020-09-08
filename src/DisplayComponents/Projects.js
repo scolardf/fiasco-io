@@ -37,21 +37,25 @@ class Projects extends React.Component {
         tags: ["Javascript", "React"]
       },
     };
-    this.setState({
-      projectList: [sampleItem],
-    });
+    var sampleList = [];
+    for( var i= 0; i < 8; i++) {
+      sampleList.push({key: i, data:sampleItem.data});
+    }
+    // this.setState({
+    //   projectList: [sampleItem],
+    // });
     // var projectList = this.state.projectList;
 
-    // var projectListItems = projectList.map((content) => (
-    //   <li className="Project-List-Item" key={content.key}>
-    //     <ProjectItem data={content.data}/>
-    //   </li>
-    // ));
-    var projectListItems = (
-      <li className={styles.projectListItem}>
-        <ProjectItem {...sampleItem} />
+    var projectListItems = sampleList.map((content) => (
+      <li className={styles.projectListItem} key={content.key}>
+        <ProjectItem {...content}/>
       </li>
-    );
+    ));
+    // var projectListItems = (
+    //   <li className={styles.projectListItem}>
+    //     <ProjectItem {...sampleItem} />
+    //   </li>
+    // );
     this.setState({
       projectListItems: <ul className={styles.projectList}>{projectListItems}</ul>,
     });
@@ -64,6 +68,9 @@ class Projects extends React.Component {
           <p>
             This section is unfinished.
             Filters for the projects will be listed here.
+          </p>
+          <p>
+            Currently testing multiple items in project list
           </p>
         </div>
         {this.state.projectListItems}
