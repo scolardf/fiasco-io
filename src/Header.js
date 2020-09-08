@@ -19,7 +19,6 @@ class AppHeader extends React.Component {
   render() {
     return (
       <div id="headerContainer">
-        {/* <a id="imageLink" href="#" onClick={e => this.handleClick(e.target.id)}><img src={fiascoLogo} className="Fiasco-Logo" alt="logo" /></a> */}
         <div id="logoContainer">
           <img src={fiascoLogo} id="logoImage" alt="logo" />
           <button
@@ -30,17 +29,17 @@ class AppHeader extends React.Component {
         </div>
         <ul id="navbarContainer">
           <HeaderButton
-            name="Projects"
+            name="projects"
             value="Projects"
             clickHandle={this.handleClick}
           ></HeaderButton>
           <HeaderButton
-            name="Me"
+            name="me"
             value="About"
             clickHandle={this.handleClick}
           ></HeaderButton>
           <HeaderButton
-            name="Contact"
+            name="contact"
             value="Contact"
             clickHandle={this.handleClick}
           ></HeaderButton>

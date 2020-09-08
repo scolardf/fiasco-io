@@ -24,27 +24,28 @@ class Contact extends React.Component {
   render() {
     return (
       <div className={styles.socialContainer}>
-        <h1>reach out to me</h1>
-        {this.contactButton(
-          "htth1s://github.com/scolardf/",
-          githubIcon,
-          "white"
-        )}
-        {this.contactButton(
-          "https://www.linkedin.com/in/fiach-scolard-98350213a/",
-          linkedinIcon,
-          "#0077B5"
-        )}
-        {this.contactButton(
-          "mailto:scolardf@tcd.ie",
-          gmailIcon,
-          "#D14836"
-        )}
-        {this.contactButton(
-          "https://www.instagram.com/fethingfish/",
-          instaIcon,
-          "#E4405F"
-        )}
+        <div className={styles.textContainer}>
+        <h1>get in touch!</h1>
+        <p>looking forward to hearing from you!</p>
+        </div>
+        <div className={styles.linkContainer}>
+          {this.contactButton(
+            "https://github.com/scolardf/",
+            githubIcon,
+            "white"
+          )}
+          {this.contactButton(
+            "https://www.linkedin.com/in/fiach-scolard-98350213a/",
+            linkedinIcon,
+            "#0077B5"
+          )}
+          {this.contactButton("mailto:scolardf@tcd.ie", gmailIcon, "#D14836")}
+          {this.contactButton(
+            "https://www.instagram.com/fethingfish/",
+            instaIcon,
+            "#E4405F"
+          )}
+        </div>
       </div>
     );
   }

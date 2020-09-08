@@ -2,19 +2,30 @@
 
 .socialContainer {
   height: 100%;
-  padding: 25% 10%;
+  padding: 200px 10%;
   display: flex;
-  flex: column wrap;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
-.socialContainer h1{
-    padding: 0;
-    margin: auto;
+.textContainer {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  border-bottom: 3px aliceblue solid;
 }
+
+.linkContainer {
+  width: 100%;
+  display: flex;
+  flex: row wrap;
+  padding: 10px;
+  margin: 10px auto;
+}
+
 .buttonContainer {
   width: 100px;
   height: 100px;
-  margin: auto;
+  margin: 20px auto;
   background-color: aliceblue;
 }
 
@@ -23,7 +34,7 @@
   max-width: 100px;
   max-height: 100px;
   padding: 25%;
-  transition: background .3s ;
+  transition: background 0.3s;
   transition-timing-function: ease-in;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -32,33 +43,36 @@
   overflow: hidden;
 }
 .buttonLink:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    /* background:  #102027; */
-    border-color: #102027;
-    border-style: solid;
-    border-width: 0;
-    -webkit-transition-property: border-width;
-    transition-property: border-width;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .buttonLink:hover:before,
-  .buttonLink:focus:before,
-  .buttonLink:active:before {
-    -webkit-transform: translateY(0);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-color: #102027;
+  border-style: solid;
+  border-width: 0;
+  -webkit-transition-property: border-width;
+  transition-property: border-width;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.buttonLink:hover:before,
+.buttonLink:focus:before,
+.buttonLink:active:before {
+  -webkit-transform: translateY(0);
   transform: translateY(0);
   border-width: 3px;
-  }
+}
 
 .buttonLink:hover {
-    background-color: #aacae6;
-    /* padding: 5%; */
+  background-color: #aacae6;
+}
+
+.buttonImg {
+  min-width: 50px;
+  min-height: 50px;
 }
