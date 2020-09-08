@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21880d8b46098975c7e98861f63dd30c",
+    "revision": "1ac4465e1b384b66ec535121e2396609",
     "url": "/fiasco-io/index.html"
   },
   {
-    "revision": "e870f05fe137a4249880",
-    "url": "/fiasco-io/static/css/main.ff1465a8.chunk.css"
+    "revision": "9db27088e891bef6be61",
+    "url": "/fiasco-io/static/css/main.0ea34e6c.chunk.css"
   },
   {
     "revision": "54ce945e567973c10ed8",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fiasco-io/static/js/2.74a50bc6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e870f05fe137a4249880",
-    "url": "/fiasco-io/static/js/main.9c493f33.chunk.js"
+    "revision": "9db27088e891bef6be61",
+    "url": "/fiasco-io/static/js/main.bb8ea5d0.chunk.js"
   },
   {
     "revision": "33f383ab01b05fa9c534",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fiasco-io/static/media/Fiach1.4cbf6b49.jpg"
   },
   {
-    "revision": "1f7fc07fe5b2e821a477da05cf9cc010",
-    "url": "/fiasco-io/static/media/GitHub_Vector.1f7fc07f.svg"
+    "revision": "9d093aa5b76a50202f8e4d60819a144a",
+    "url": "/fiasco-io/static/media/GitHub_Vector.9d093aa5.svg"
   },
   {
     "revision": "617870e422d4b75087cdcf9ff298032e",

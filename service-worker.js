@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fiasco-io/precache-manifest.e20f274389bf0fd9182907dc7f0f390a.js"
+  "/fiasco-io/precache-manifest.84ebfb1619e4cd74883f3558b2f717e9.js"
 );
 
 self.addEventListener('message', (event) => {
