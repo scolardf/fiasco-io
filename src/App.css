@@ -27,5 +27,5 @@
 
 .contentContainer {
   grid-area: content;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }

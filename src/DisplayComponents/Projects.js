@@ -31,8 +31,7 @@ class Projects extends React.Component {
         image: fiascoLogo,
         description:
           `A portfolio site written using ReactJS. 
-          You're looking at it right now! 
-          Isn't it pretty?`,
+          You're looking at it right now!`,
         repository: "https://github.com/scolardf/fiasco-io",
         tags: ["Javascript", "React"]
       },
