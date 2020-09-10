@@ -108,4 +108,11 @@ button {
   font-family: inherit;
   background: none;
   border: none;
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.headerButtonLi button:hover {
+  color: #aacae6;
 }
