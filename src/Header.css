@@ -1,57 +1,26 @@
-* {
-  text-align: left;
-}
-
-button {
-  cursor: pointer;
-}
-
-#headerContainer {
+.headerContainer {
   min-height: 75px;
   max-height: 100%;
   width: 100%;
   border-bottom: 5px solid aliceblue;
-  padding: 0;
+  padding: 5px;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
 
-#logoContainer {
-  max-height: 70rem;
-  padding: 0;
-  margin: 0;
-  display: block;
-  max-width: 100px;
-  height: auto;
-  clear: both;
-  position: relative;
-}
-
-#logoImage {
-  pointer-events: none;
-  margin: 5px;
-  padding: 0;
-  display: block;
-  width: auto;
-  height: 90%;
-  position: relative;
-}
-
-#logoButton {
-  background: transparent;
-  border: none !important;
-  font-size: 0;
+.imageLink {
+  height: 100px;
+  width: 100px;
   margin: auto;
+}
+.imageLink img{
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0%;
-  left: 0%;
 }
 
-#navbarContainer {
+.navbarContainer {
   text-align: center;
   max-height: 100%;
   list-style-type: none;
@@ -62,57 +31,10 @@ button {
   flex-grow: 1;
 }
 
-.headerButtonLi {
+.navLi {
   color: aliceblue;
-  /* display: block; */
-  padding: 0;
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 2em;
-  border-bottom: 3px solid aliceblue;
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
-.headerButtonLi:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  top: 0;
-  background: aliceblue;
-  height: 4px;
-  -webkit-transition-property: right;
-  transition-property: right;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.headerButtonLi:hover:before,
-.headerButtonLi:focus:before,
-.headerButtonLi:active:before {
-  right: 0;
-}
-
-.headerButtonLi button {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: aliceblue;
-  font-family: inherit;
-  background: none;
-  border: none;
-  transition-property: color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
-}
-
-.headerButtonLi button:hover {
-  color: #aacae6;
 }

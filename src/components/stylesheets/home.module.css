@@ -1,0 +1,27 @@
+.homeContainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  /* padding-top: 10%; */
+}
+.homeContainer * {
+  display: inline-block;
+  margin: 10px auto;
+  font-size: clamp(14px, 2vw, 40px);
+  font-weight: normal;
+}
+
+.highlight {
+    color: #aacae6;
+}
+
+.navContainer {
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.navContainer * {
+  margin: auto 1em;
+}
