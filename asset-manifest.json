@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/fiasco-io/static/css/main.5a70685a.chunk.css",
-    "main.js": "/fiasco-io/static/js/main.e118873f.chunk.js",
-    "main.js.map": "/fiasco-io/static/js/main.e118873f.chunk.js.map",
+    "main.css": "/fiasco-io/static/css/main.873d4605.chunk.css",
+    "main.js": "/fiasco-io/static/js/main.4a36f5d1.chunk.js",
+    "main.js.map": "/fiasco-io/static/js/main.4a36f5d1.chunk.js.map",
     "runtime-main.js": "/fiasco-io/static/js/runtime-main.a0bd8ce2.js",
     "runtime-main.js.map": "/fiasco-io/static/js/runtime-main.a0bd8ce2.js.map",
-    "static/js/2.b81bfe06.chunk.js": "/fiasco-io/static/js/2.b81bfe06.chunk.js",
-    "static/js/2.b81bfe06.chunk.js.map": "/fiasco-io/static/js/2.b81bfe06.chunk.js.map",
+    "static/js/2.0de0c552.chunk.js": "/fiasco-io/static/js/2.0de0c552.chunk.js",
+    "static/js/2.0de0c552.chunk.js.map": "/fiasco-io/static/js/2.0de0c552.chunk.js.map",
     "index.html": "/fiasco-io/index.html",
-    "precache-manifest.c23ed62c722b133c52ac39fea69daf4e.js": "/fiasco-io/precache-manifest.c23ed62c722b133c52ac39fea69daf4e.js",
+    "precache-manifest.4c830539f08f4fa2e4348509edb11084.js": "/fiasco-io/precache-manifest.4c830539f08f4fa2e4348509edb11084.js",
     "service-worker.js": "/fiasco-io/service-worker.js",
-    "static/css/main.5a70685a.chunk.css.map": "/fiasco-io/static/css/main.5a70685a.chunk.css.map",
-    "static/js/2.b81bfe06.chunk.js.LICENSE.txt": "/fiasco-io/static/js/2.b81bfe06.chunk.js.LICENSE.txt",
+    "static/css/main.873d4605.chunk.css.map": "/fiasco-io/static/css/main.873d4605.chunk.css.map",
+    "static/js/2.0de0c552.chunk.js.LICENSE.txt": "/fiasco-io/static/js/2.0de0c552.chunk.js.LICENSE.txt",
     "static/media/Fiach1.jpg": "/fiasco-io/static/media/Fiach1.4cbf6b49.jpg",
     "static/media/GitHub_Vector.svg": "/fiasco-io/static/media/GitHub_Vector.5b94e41a.svg",
-    "static/media/github.svg": "/fiasco-io/static/media/github.617870e4.svg",
-    "static/media/gmail.svg": "/fiasco-io/static/media/gmail.b986b4fd.svg",
-    "static/media/instagram.svg": "/fiasco-io/static/media/instagram.662a4f14.svg",
-    "static/media/linkedin.svg": "/fiasco-io/static/media/linkedin.619231ff.svg"
+    "static/media/github.svg": "/fiasco-io/static/media/github.acd8d3e5.svg",
+    "static/media/gmail.svg": "/fiasco-io/static/media/gmail.356da9c2.svg",
+    "static/media/instagram.svg": "/fiasco-io/static/media/instagram.3a8dc1bf.svg",
+    "static/media/linkedin.svg": "/fiasco-io/static/media/linkedin.cd303e05.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a0bd8ce2.js",
-    "static/js/2.b81bfe06.chunk.js",
-    "static/css/main.5a70685a.chunk.css",
-    "static/js/main.e118873f.chunk.js"
+    "static/js/2.0de0c552.chunk.js",
+    "static/css/main.873d4605.chunk.css",
+    "static/js/main.4a36f5d1.chunk.js"
   ]
 }
