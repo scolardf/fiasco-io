@@ -11,7 +11,13 @@
   width: 100%;
   padding: 10px;
   margin: 10px auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
   border-bottom: 3px aliceblue solid;
+}
+.textContainer h1 {
+  color: #aacae6;
 }
 
 .linkContainer {
@@ -26,7 +32,6 @@
   width: 100px;
   height: 100px;
   margin: 20px auto;
-  background-color: aliceblue;
 }
 
 .buttonLink {
@@ -34,8 +39,8 @@
   max-width: 100px;
   max-height: 100px;
   padding: 25%;
-  transition: background 0.3s;
-  transition-timing-function: ease-in;
+  border-bottom: 3px solid aliceblue;
+  display: inline-block;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -47,29 +52,21 @@
   position: absolute;
   z-index: -1;
   left: 0;
-  right: 0;
+  right: 100%;
   top: 0;
-  bottom: 0;
-  border-color: #102027;
-  border-style: solid;
-  border-width: 0;
-  -webkit-transition-property: border-width;
-  transition-property: border-width;
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
+  background: aliceblue;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 .buttonLink:hover:before,
 .buttonLink:focus:before,
 .buttonLink:active:before {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  border-width: 3px;
-}
-
-.buttonLink:hover {
-  background-color: #aacae6;
+  right: 0;
 }
 
 .buttonImg {
