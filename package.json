@@ -3,10 +3,6 @@
   "name": "fiasco-net",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "10.x",
-    "npm": "6.x"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.2",
@@ -23,7 +19,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "PORT=3001 react-scripts start",
+    "start": "PORT=5005 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
